@@ -7,11 +7,27 @@
     <title>Clone Disney+</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="disney">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine Agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__brnding">
+            <div class="hero__content__brnding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores histórias em um só lugar.
             </h3>
@@ -156,7 +172,10 @@
         </div>
     </section>
         <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei-Leão">
+        <picture>
+            <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei-Leão">
+        </picture>
         <div  class="image-text-section__text_container image-text-section__text_container--image-full-width">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
@@ -164,7 +183,6 @@
             </p>
         </div>
     </section>
-
 
     <section class="available-devices">
         <h2 class="title">Disponível aos seus dispositivos favoritos</h2>
@@ -222,20 +240,20 @@
                 </div>
                 <div class="faq__questions__item__answer text--big">
                     <p class="text--small">
-                        O Disney+ oferece:
-                        Experiência premium sem intervalos comerciais.
-                        As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.
-                        Groupwatch: assista junto com amigos ou familiares, mesmo separados.
-                        Downloads ilimitados em até 10 dispositivos compatíveis.
-                        Mais de 300 títulos em 4K UHD e HDR.
-                        A possibilidade de assistir em até 4 dispositivos compatíveis simultaneamente sem custo adicional.
-                        IMAX Enhanced: disponível para alguns títulos da Marvel em dispositivos compatíveis com o Disney+.
+                        •O Disney+ oferece:
+                        •Experiência premium sem intervalos comerciais.
+                        •As melhores histórias da Disney, Pixar, Marvel, Star Wars e National Geographic, tudo em um só lugar.
+                        •Groupwatch: assista junto com amigos ou familiares, mesmo separados.
+                        •Downloads ilimitados em até 10 dispositivos compatíveis.
+                        •Mais de 300 títulos em 4K UHD e HDR.
+                        •A possibilidade de assistir em até 4 dispositivos compatíveis simultaneamente sem custo adicional.
+                        •IMAX Enhanced: disponível para alguns títulos da Marvel em dispositivos compatíveis com o Disney+.
                     </p>
                 </div>
             </li>
             <li class="faq__questions__item ">
                 <div class="faq__questions__item__question" data-faq-question>
-                    O que está incluído no Disney+?
+                    Já tem o Disney+ ou o Star+ e quer o Combo+?
                 </div>
                 <div class="faq__questions__item__answer text--big">
                     <p class="text--small">
@@ -252,7 +270,7 @@
             </li>
             <li class="faq__questions__item ">
                 <div class="faq__questions__item__question" data-faq-question>
-                    O que está incluído no Disney+?
+                    Quais formas de pagamento posso utilizar?
                 </div>
                 <div class="faq__questions__item__answer text--big">
                     <p class="text--small">
@@ -269,6 +287,37 @@
             </li>
         </ul>
     </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__linkns__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__linkns__item"><a href="#" class="text--small">Termos e Condições de Uso</a></li>
+                <li class="footer__linkns__item"><a href="#" class="text--small">Política de Privacidade</a></li>
+                <li class="footer__linkns__item"><a href="#" class="text--small">Proteção de Dados no Brasil</a></li>
+                <li class="footer__linkns__item"><a href="#" class="text--small">Anúncios personalizados</a></li>
+                <li class="footer__linkns__item"><a href="#" class="text--small">Dispositivos compatíveis</a></li>
+                <li class="footer__linkns__item"><a href="#" class="text--small">Ajuda</a></li>
+                <li class="footer__linkns__item"><a href="#" class="text--small">Sobre o Disney+</a></li>
+            </li>
+        </ul>
+        <p class="text--small">
+            © 2022 Disney, Disney+ The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade
+        </p>
+        <p class="text--small">
+            Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ladla, World Trade Centar, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil CNPJ/M 73.042.962/0004-20
+        </p>
+        </div>
+    </footer>
     <script src="./src/main.js"></script>
 </body>
 </html>
