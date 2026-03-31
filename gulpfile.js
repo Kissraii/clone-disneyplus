@@ -31,7 +31,6 @@ exports.scripts = scripts;
 // Roda tudo junto
 exports.default = gulp.parallel(styles, images, scripts);
 
-// Watch corrigido
 exports.watch = function () {
     gulp.watch('./src/styles/**/*.scss', styles);
     gulp.watch('./src/images/**/*', images);
